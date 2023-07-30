@@ -25,3 +25,12 @@
       state: latest
       update_cache: true
 
+  - name: Install Kubernetes Prerequisites
+    apt:
+      name:
+        - kubelet
+        - kubeadm
+        - kubectl
+      state: present
+      update_cache: true
+
